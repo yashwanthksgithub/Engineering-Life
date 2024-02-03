@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left-image, .right-image {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    .left-info, .right-info {
+      flex: 1;
+      max-width: 50%;
+      text-align: justify;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    button {
+      background-color: #fff;
+      color: #333;
+      padding: 8px 12px;
+      border: none;
+      margin-right: 25px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>First Year Engineering Information</h1>
+  </header>
+
+  
+
+  <section>
+    <div class="left-image">
+      <img src="page1_1.jpg" alt="Right Side Image">
+    </div>
+    <div class="right-info">
+      <h2>Right Side Information</h2>
+      <p>This is the information on the right side.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="left-info">
+      <h2>Left Side Information</h2>
+      <p>This is the information on the left side.</p>
+    </div>
+    <div class="right-image">
+      <img src="page1_2.jpg" alt="Left Side Image">
+    </div>
+  </section>
+
+  
+
+  <section>
+    <div class="left-image">
+      <img src="page1_3.jpg" alt="Right Side Image">
+    </div>
+    <div class="right-info">
+      <h2>Right Side Information</h2>
+      <p>This is the information on the right side.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="left-info">
+      <h2>Left Side Information</h2>
+      <p>This is the information on the left side.</p>
+    </div>
+    <div class="right-image">
+      <img src="page1_4.jpg" alt="Left Side Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="left-image">
+      <img src="page1_5.jpg" alt="Right Side Image">
+    </div>
+    <div class="right-info">
+      <h2>Right Side Information</h2>
+      <p>This is the information on the right side.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="left-info">
+      <h2>Left Side Information</h2>
+      <p>This is the information on the left side.</p>
+    </div>
+    <div class="right-image">
+      <img src="page1_6.png" alt="Left Side Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="left-image">
+      <img src="page1_7.jpg" alt="Right Side Image">
+    </div>
+    <div class="right-info">
+      <h2>Right Side Information</h2>
+      <p>This is the information on the right side.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="left-info">
+      <h2>Left Side Information</h2>
+      <p>This is the information on the left side.</p>
+    </div>
+    <div class="right-image">
+      <img src="page1_8.jpg" alt="Left Side Image">
+    </div>
+  </section>
+
+  <footer>
+    <button id="previousBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </footer>
+
+  <script>
+     document.getElementById('previousBtn').addEventListener('click', function() {
+      // Add logic to navigate to the previous page
+      window.location.href = 'home.html'; // Replace with your actual page URL
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function() {
+      // Add logic to navigate to the next page
+      window.location.href = 'page2.html'; // Replace with your actual page URL
+    });
+  </script>
+
+</body>
+</html>

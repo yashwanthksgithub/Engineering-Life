@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Engineering Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Align items to the start (left) */
+    }
+
+    header img {
+      max-width: 120px; /* Adjust the size of your logo */
+      height: auto;
+      margin-right: 10px; /* Add some spacing to the right of the logo */
+    }
+
+
+        main {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2em;
+        }
+
+        .right-image {
+            margin-left: 90px;
+        }
+
+        .left-image,
+        .right-image {
+            flex: 1;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 70vh;
+            /* Set a maximum height for the image */
+            margin-bottom: 2px;
+            /* Adjust the space below the image */
+        }
+
+        .center-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-image,
+            .right-image,
+            .center-content {
+                flex: 1;
+            }
+
+            img {
+                margin: 0;
+                /* Remove bottom margin for better stacking on small screens */
+                margin-bottom: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1 style="margin-right: 100px; text-align: center;">Your Engineering Life</h1>
+    </header>
+    <main>
+        <div class="left-image">
+            <img src="home1.png" alt="Left Engineering Image">
+        </div>
+        <div class="center-content">
+            <h2>Welcome to Your Engineering Journey!</h2>
+            <p>Embark on a fulfilling and exciting career in engineering. Explore the various aspects of engineering
+                life and discover what lies ahead.</p>
+            <h3>Key Information:</h3>
+            <ul>
+                <li>Learn about different engineering disciplines and specializations.</li>
+                <li>Get insights into the challenges and successes of an engineer's journey.</li>
+                <li>Discover opportunities for professional development and continued education.</li>
+                <li>Find resources to stay updated with the latest trends and technologies in the field.</li>
+            </ul>
+            <a href="page1.html">Start Your Journey</a>
+        </div>
+        <div class="right-image">
+            <img src="home2.png" alt="Right Engineering Image">
+        </div>
+    </main>
+</body>
+
+</html>
